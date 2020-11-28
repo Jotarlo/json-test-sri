@@ -30,9 +30,9 @@ function loadData() {
     fetch('data/info.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            console.log(data);
             jsonData = data;
-            console.error(jsonData)
+            console.error(jsonData);
             DrawTable("", "");
         });
 }

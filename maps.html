@@ -10,8 +10,6 @@
     <link type="text/css" rel="stylesheet" href="resources/css/maps.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjGcU08-VHFJGI0yyqzqwG31hqyyQNZg4&callback=initMap&libraries=&v=weekly"
-        defer></script>
 </head>
 
 <body>
@@ -32,7 +30,7 @@
             <li><a href="index.html">Table</a></li>
             <li><a href="maps.html">Maps</a></li>
         </ul>
-
+<input type="number" id="txtZoom" onkeyup="RefreshZoom()" value="12" />
         <!--The div element for the map -->
         <div id="map">
 
@@ -70,6 +68,8 @@
     <script type="text/javascript" src="resources/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="resources/js/init.js"></script>
     <script type="text/javascript" src="resources/js/mapsFunctions.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjGcU08-VHFJGI0yyqzqwG31hqyyQNZg4&callback=initMap&libraries=&v=weekly"
+        defer></script>
 </body>
 
 </html>
